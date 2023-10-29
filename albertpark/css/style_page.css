@@ -5,7 +5,7 @@ body{
    justify-content: center;
    display: flex;
    line-height: 5em;
-    margin-bottom: 4em;
+    margin-bottom: 1em;
 }
 #nav-list li {
     display: inline-block;
@@ -16,10 +16,8 @@ body{
 
 }
 .logo-img {
-    width: 30%;
     position: absolute;
-    left:8em;
-    top:2em;
+    left: 2rem;
     margin: 0px 15px 15px 0px;
 }
 ul{
@@ -902,4 +900,61 @@ p{
 .flex-reverse{
     display:flex;
     flex-direction:row-reverse
+}
+
+/** Entrafas **/
+.parallax-text-wrap {
+    position: relative;
+}
+
+.parallax-text-wrap h2 {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    color: #3fbed1;
+}
+
+.parallax-text {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    font: 700 50px/1 "Oswald", Helvetica, Arial, sans-serif;
+    letter-spacing: .180em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #dadada;
+}
+
+@media (min-width: 768px) {
+    .parallax-text {
+        font-size: 70px;
+        bottom: 0;
+        display: block;
+    }
+}
+
+@media (min-width: 992px) {
+    .parallax-text {
+        font-size: 100px;
+    }
+
+}
+
+.parallax-text-wrap h2 {
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: "Oswald", Helvetica, Arial, sans-serif;
+    color: #ffbd59;
+}
+
+@media (min-width: 768px) {
+    h2, .heading-2 {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
 }

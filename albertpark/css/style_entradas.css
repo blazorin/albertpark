@@ -1,0 +1,396 @@
+button{
+    padding:0;
+}
+button:focus{
+    outline:none!important;
+}
+*:focus{
+    outline:none;
+}
+input,button{
+    outline:none;
+}
+label{
+    margin-bottom:0;
+}
+form{
+    margin-bottom:0;
+}
+.bg-gray-lighter{
+    background-color:#f2f3f9;
+    fill:#f2f3f9;
+}
+.bg-gray-lighter .form-input,.bg-gray-lighter .form-input:focus{
+    background-color:#ffffff;
+}
+[class*='bg-']{
+    background-size:cover;
+    background-position:center center;
+}
+.button{
+    position:relative;
+    display:inline-block;
+    max-width:100%;
+    padding:9px 30px;
+    min-width:210px;
+    font-size:17px;
+    font-family:"Oswald", Helvetica, Arial, sans-serif;
+    font-weight:400;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    border:1px solid;
+    border-radius:35px;
+    text-align:center;
+    vertical-align:middle;
+    cursor:pointer;
+    user-select:none;
+    transition:.25s all ease;
+    white-space:pre-wrap;
+}
+.button:focus,.button:active,.button:active:focus{
+    outline:none;
+}
+@media (min-width: 768px){
+    .button{
+        padding:14px 38px;
+    }
+}
+@media (min-width: 992px){
+    .button{
+        min-width:230px;
+    }
+}
+.button-block{
+    display:block;
+    width:100%;
+}
+.button-primary,.button-primary:focus{
+    color:#ffffff;
+    background-color:#fab82b;
+    border-color:#fab82b
+}
+.button-primary:hover,.button-primary:active{
+    color:#ffffff;
+    background-color: #f8cf67;
+    border-color:#fab82b;
+}
+.button-nina{
+    position:relative;
+    overflow:hidden;
+    line-height:1;
+    transition:background 0.3s 0.01s, border-color 0.3s 0.01s;
+}
+.button-nina > span{
+    display:none;
+    vertical-align:middle;
+    line-height:24px;
+}
+.button-nina .button-original-content{
+    display:block;
+}
+@media (min-width: 992px){
+    .desktop .button-nina > span{
+        position:relative;
+        overflow:hidden;
+        display:inline-block;
+        line-height:24px;
+        text-align:center;
+        opacity:0.01;
+        color:inherit;
+        transform:translate3d(0, -10px, 0);
+        transition:0.22s;
+        transition-timing-function:cubic-bezier(0.75, 0, 0.125, 1);
+    }
+    .desktop .button-nina > span:first-child{
+        padding-left:4px;
+    }
+    .desktop .button-nina > span:nth-last-child(2){
+        padding-right:4px;
+    }
+    .desktop .button-nina > span:empty::after{
+        display:inline-block;
+        padding:0 2px;
+        content:'\a';
+    }
+    .desktop .button-nina .button-original-content{
+        position:absolute;
+        z-index:1;
+        opacity:1;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        display:block;
+        padding:inherit;
+        transform:translate3d(0, 0, 0);
+        letter-spacing:.05em;
+        min-width:inherit;
+        background-color:transparent;
+    }
+    .desktop .button-nina:hover > span{
+        opacity:1;
+        top:0;
+        transform:translate3d(0, 0, 0);
+    }
+    .desktop .button-nina:hover .button-original-content{
+        opacity:0;
+        transform:translate3d(0, 100%, 0);
+        transition-delay:0s!important;
+    }
+}
+.rd-mailform{
+    position:relative;
+    text-align:left;
+}
+.form-input{
+    box-shadow:none;
+    display:block;
+    width:85% !important;
+    min-height:60px;
+    font-weight:300;
+    line-height:24px;
+    color:#29293a;
+    background-color:#f2f3f9;
+    background-image:none;
+    border:0px solid #f2f3f9;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius:35px;
+    -webkit-appearance:none;
+}
+.form-input:focus{
+    background-color:#f2f3f9;
+    box-shadow:none;
+}
+@media (min-width: 1600px){
+    .form-input{
+        font-size:18px;
+    }
+}
+.form-wrap{
+    position:relative;
+    margin:0;
+}
+* + .form-button{
+    margin-top:20px;
+}
+.form-label,.form-label-outside{
+    font-weight:300;
+    line-height:24px;
+    color:#838386;
+    font-family: system-ui;
+}
+@media (min-width: 1600px){
+    .form-label,.form-label-outside{
+        font-size:18px;
+    }
+}
+.form-label{
+    position: absolute;
+    font-size: 1.2rem;
+    top: 50%;
+    left: 25px;
+    z-index: 9;
+    transition: .3s;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-family: system-ui;
+}
+.form-label-outside{
+    padding-left: 21px;
+    margin-bottom: 3px;
+    font-size: 20px;
+    letter-spacing: .02em;
+    color: #8e8e8e;
+    pointer-events: auto;
+    cursor: pointer;
+}
+.form-label-outside{
+    opacity:1;
+    transform:none;
+}
+.form-request{
+    padding:30px 15px;
+    max-width:420px;
+    margin-left:auto;
+    margin-right:auto;
+    box-shadow:0px 3px 27px 0px rgba(0, 0, 0, 0.25);
+    border-radius:8px;
+    background-color:#ffffff;
+    color:#29293a;
+}
+@media (min-width: 1200px){
+    .form-request{
+        padding:40px 35px;
+        box-shadow:0px 23px 27px 0px rgba(0, 0, 0, 0.25);
+    }
+}
+.form-request-modern{
+    max-width:566px;
+    background-color:#f2f3f9;
+}
+.form-request-modern .form-input{
+    background-color:#ffffff;
+}
+.form-request-modern .form-input,.form-request-modern .form-label{
+    color:#29293a;
+}
+.form-request-modern{
+    margin-top:30px;
+    margin-bottom:30px;
+}
+.form-request-modern * + .rd-mailform{
+    margin-top:10px;
+}
+.form-request-modern * + .form-button{
+    margin-top:30px;
+}
+@media (min-width: 1200px){
+    .form-request-modern{
+        margin-top:0;
+        margin-bottom:0;
+    }
+}
+@media (min-width: 1600px){
+    .form-request-modern * + .form-button{
+        margin-top:40px;
+    }
+}
+.rd-mailform-custom .button{
+    font-size:17px;
+    font-weight:600;
+}
+h4,[class^='heading-']{
+    margin-top:0;
+    margin-bottom:0;
+    font-family:"Oswald", Helvetica, Arial, sans-serif;
+    font-weight:700;
+    text-transform:uppercase;
+    color:#29293a;
+}
+h4{
+    font-size:21px;
+    line-height:1.35;
+    letter-spacing:0.06em;
+}
+@media (min-width: 768px){
+    h4{
+        font-size:26px;
+        line-height:1.42857;
+    }
+}
+@media (min-width: 1600px){
+    h4{
+        font-size:28px;
+    }
+}
+.ls-1{
+    letter-spacing:0;
+}
+.text-regular{
+    font-weight:400;
+}
+* + .rd-mailform{
+    margin-top:30px;
+}
+.row-20{
+    margin-bottom:-20px;
+    margin-left: 20px;
+}
+.row-20:empty{
+    margin-bottom:0;
+}
+.row-20 > *{
+    margin-bottom:20px;
+}
+.heading-line{
+    position:relative;
+    text-align: center;
+}
+.heading-line::before{
+    content:'';
+    position:absolute;
+    top:50%;
+    left:0;
+    width:86px;
+    height:1px;
+    background:#c6c6c6;
+}
+.heading-line::after{
+    content:'';
+    position:absolute;
+    top:50%;
+    right:0;
+    width:86px;
+    height:1px;
+    background:#c6c6c6;
+}
+
+@media (min-width: 992px){
+    .swiper-form-wrap .form-request{
+        pointer-events:auto;
+    }
+}
+.form-wrap-modern .stepper{
+    min-width:100%;
+}
+.stepper{
+    position:relative;
+    display:inline-block;
+    max-width:70px;
+    min-width:220px;
+}
+.stepper input[type="number"]{
+    width:100%;
+    text-align:center;
+    -moz-appearance:textfield;
+    font-size: 20px;
+}
+.stepper-arrow{
+    position:absolute;
+    top:50%;
+    margin-top:-10px;
+    width:20px;
+    height:20px;
+    line-height:20px;
+    font-size:28px;
+    font-family:"Material Design Icons";
+    cursor:pointer;
+    color:#fab82b;
+    transition:.3s all ease;
+}
+.stepper-arrow:hover{
+    color: #f8cf67;
+}
+.stepper-arrow.up{
+    right: 67px;
+    text-align:left;
+}
+.stepper-arrow.up:before{
+    content:'\f504';
+}
+.stepper-arrow.down{
+    left:19px;
+    text-align:right;
+}
+.stepper-arrow.down:before{
+    content:'\f465';
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.tickets-bg {
+    background-image: url(../img/isla-01.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+}
+
+@font-face{font-family:"Material Design Icons";src:url("../fonts/materialdesignicons-webfont.eot");src:url("../fonts/materialdesignicons-webfont.eot") format("embedded-opentype"), url("../fonts/materialdesignicons-webfont.woff") format("woff2"), url("../fonts/materialdesignicons-webfont.woff") format("woff"), url("../fonts/materialdesignicons-webfont.ttf") format("truetype"), url("../fonts/materialdesignicons-webfont.svg") format("svg");font-weight:normal;font-style:normal;}
