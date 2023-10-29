@@ -144,57 +144,84 @@ body{
 
 .container_contacto {
     text-align: center;
-    padding: 20px;
+    padding: 6em;
     background-color: #f0f0f0;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    max-width: 800px; /* Cambiado a 800px */
+    max-width: 1200px;
     margin: 0 auto;
 }
 
+
 #h2_contacto {
-    font-size: 36px; /* Aumentado el tamaño del encabezado */
+    font-size: 72px;
     color: #333;
+    font-family: 'Fruktur';
 }
 
 #contact-form {
     text-align: left;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 #contact-form label {
     display: block;
-    margin-top: 15px; /* Aumentado el margen superior */
-    font-size: 24px; /* Aumentado el tamaño de las etiquetas */
+    margin-top: 30px;
+    font-size: 4.5em;
+    font-family: sans-serif!important;
 }
 
 #contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form textarea {
-    width: 100%;
-    padding: 15px; /* Aumentado el tamaño de relleno */
-    margin-top: 10px; /* Aumentado el margen superior */
-    font-size: 20px; /* Aumentado el tamaño de texto */
+#contact-form input[type="email"]
+,
+#contact-form textarea,
+#problem,
+#issue,
+#photos,
+#member{
+    margin-bottom: 2em;
+    width: 90%;
+    padding: 30px;
+    margin-top: 1em;
+    font-size: 2.5em;
     border: 1px solid #ccc;
-    border-radius: 10px; /* Aumentado el radio del borde */
+    border-radius: 20px;
+    font-family: sans-serif!important;
 }
 
 #contact-form textarea {
-    height: 200px; /* Aumentado la altura del área de texto */
+    height: 300px;
 }
 
 #contact-form button {
     display: block;
     width: 100%;
-    padding: 15px; /* Aumentado el tamaño del relleno */
-    margin-top: 30px; /* Aumentado el margen superior */
+    padding: 30px;
+    margin-top: 60px;
     background-color: #FFBD59;
     color: #fff;
-    font-size: 24px; /* Aumentado el tamaño del botón */
+    font-size: 48px;
     border: none;
-    border-radius: 10px; /* Aumentado el radio del borde */
+    border-radius: 20px;
     cursor: pointer;
+    font-family: 'Fruktur';
 }
+
+
+#issue {
+    width: 100%;
+    padding: 20px;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+#photos {
+    width: 100%;
+    padding: 20px;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
 
 
 footer {
