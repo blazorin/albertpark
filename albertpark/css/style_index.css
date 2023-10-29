@@ -82,6 +82,7 @@ h1 {
     font-size: 6em;
     color: #363434;
     margin: 0;
+
 }
 
 
@@ -138,6 +139,62 @@ body{
     color: white;
     font-family: 'Fruktur';
   }
+
+/* Estilos para el formulario de contacto */
+
+.container_contacto {
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 800px; /* Cambiado a 800px */
+    margin: 0 auto;
+}
+
+#h2_contacto {
+    font-size: 36px; /* Aumentado el tamaño del encabezado */
+    color: #333;
+}
+
+#contact-form {
+    text-align: left;
+    margin-top: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-top: 15px; /* Aumentado el margen superior */
+    font-size: 24px; /* Aumentado el tamaño de las etiquetas */
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="email"],
+#contact-form textarea {
+    width: 100%;
+    padding: 15px; /* Aumentado el tamaño de relleno */
+    margin-top: 10px; /* Aumentado el margen superior */
+    font-size: 20px; /* Aumentado el tamaño de texto */
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Aumentado el radio del borde */
+}
+
+#contact-form textarea {
+    height: 200px; /* Aumentado la altura del área de texto */
+}
+
+#contact-form button {
+    display: block;
+    width: 100%;
+    padding: 15px; /* Aumentado el tamaño del relleno */
+    margin-top: 30px; /* Aumentado el margen superior */
+    background-color: #FFBD59;
+    color: #fff;
+    font-size: 24px; /* Aumentado el tamaño del botón */
+    border: none;
+    border-radius: 10px; /* Aumentado el radio del borde */
+    cursor: pointer;
+}
 
 
 footer {
@@ -202,6 +259,67 @@ footer {
 
 
 
+@media (max-width: 768px) {
+    .navigation {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        line-height: normal;
+        margin-bottom: 3em;
+    }
+
+    #nav-list {
+        display: flex;
+        align-items: center;
+    }
+
+    #nav-list li {
+        display: inline-block;
+        font-size: 18px;
+        margin: 2em;
+    }
+
+    .logo-img {
+        left: 2em;
+        top: 1em;
+        max-width: 100px;
+    }
+
+    a {
+        font-size: 2em;
+        padding: 2em;
+    }
+
+    .card {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        margin: 2em 0;
+    }
+
+    .top {
+        position: static;
+        font-size: 3em;
+        text-align: center;
+    }
+
+    .bot {
+        position: static;
+        font-size: 2em;
+        text-align: center;
+        padding: 10px 20px;
+        margin-bottom: 2em;
+    }
+
+    .container {
+        position: static;
+        text-align: center;
+    }
+}
 
 
 

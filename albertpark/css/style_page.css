@@ -1,20 +1,26 @@
 body{
     background:#f7f7f7
 }
-.navigation{
-    justify-content:center;
-    display:flex;
-    line-height:170px;
-    margin-bottom:2em
+.navigation {
+   justify-content: center;
+   display: flex;
+   line-height: 5em;
+    margin-bottom: 4em;
 }
-.logo-img{
-    position:absolute;
-    left:0;
-    top:1em;
-    margin:0 15px 15px 0;
-    margin-left:auto;
-    right:0;
-    margin-right:auto
+#nav-list li {
+    display: inline-block;
+    font-size: 18px;
+    margin: 20px;
+    vertical-align:bottom;
+    line-height:normal;
+
+}
+.logo-img {
+    width: 30%;
+    position: absolute;
+    left:8em;
+    top:2em;
+    margin: 0px 15px 15px 0px;
 }
 ul{
     text-decoration:none
@@ -22,7 +28,7 @@ ul{
 #nav-list li{
     display:inline-block;
     font-size:18px;
-    margin:20px;
+    margin:0.8em;
     vertical-align:bottom;
     line-height:normal
 }
@@ -33,7 +39,7 @@ ul{
     font-family:Fruktur,serif
 }
 .a-head{
-    font-size:1.7em;
+    font-size:1.2em;
     text-decoration:none;
     color:#ffbd59;
     padding:2em;

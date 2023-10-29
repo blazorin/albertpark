@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Albert Park</title>
+    <link rel="stylesheet" href="./css/style_index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="./img/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fruktur&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navigation">
+                <img class="logo-img" src="./img/logo-custom.png" alt="Logo" style="max-width: 180px;">
+                <p>
+                    <ul id="nav-list">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="atracciones.html">Atracciones</a></li>
+                        <li><a href="entradas.html">Entradas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </p>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <p>¿Tienes alguna pregunta o comentario? ¡No dudes en ponerte en contacto con nosotros!</p>
+    </main>
+
+    <div class="container_contacto">
+        <h2 id="h2_contacto">Formulario de Contacto</h2>
+        <form id="contact-form">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" required></textarea>
+
+            <button type="submit">Enviar Mensaje</button>
+        </form>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2023 Albert Park. Todos los derechos reservados.</p>
+    </div>
+    <div class="newsletter">
+        <h3>Entérate de TODAS nuestras promociones</h3>
+        <form id="newsletter-form">
+            <input type="email" placeholder="Tu correo electrónico" class="newsletter-input" id="email-input">
+            <button class="newsletter-button" id="subscribe-button">Suscribirse</button>
+        </form>
+    </div>
+</footer>
+</html>
